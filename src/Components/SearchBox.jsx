@@ -17,7 +17,7 @@ const SearchBox = ({ onSearch }) => {
     <form onSubmit={handleSubmit} style={{height: '30px' , margin: '1rem'}}>
       <input
         type="text"
-        placeholder="Enter citry name"
+        placeholder="Enter city name"
         value={location}
         onChange={handleChange}
         style={{backgroundColor: "#FFFFFF" , color: "rgb(18,18,18,1)", 

@@ -3,6 +3,7 @@ import React from "react";
 
 const InfoCard = ({ label, value }) => (
   <Card
+  className="weather-cards"
     sx={{
       width: 200,
       height: 200,
