@@ -14,14 +14,19 @@ const SearchBox = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{height: '30px' , margin: '1rem'}}>
       <input
         type="text"
-        placeholder="Enter location"
+        placeholder="Enter citry name"
         value={location}
         onChange={handleChange}
+        style={{backgroundColor: "#FFFFFF" , color: "rgb(18,18,18,1)", 
+          height: '30px', margin: '30px', borderRadius: '8px' , 
+        }}
+
+        
       />
-      <button type="submit">Search</button>
+      <button style={{height: '30px' ,  borderRadius: '10px' , backgroundColor: 'green' , color: "white"}}type="submit">Search</button>
     </form>
   );
 };
