@@ -63,6 +63,7 @@ const DetailsProvider = ({ details, loading }) => {
         <InfoCard label="Humidity" value={`${humidity} %`} />
         {/* <InfoCard label="Condition" value={`${condition}`} /> */}
         <Card
+        className="weather-cards"
           sx={{
             width: 200,
             height: 200,
