@@ -59,10 +59,10 @@ const DetailsProvider = ({ details, loading }) => {
           flexWrap: "wrap", 
         }}
       >
-         <InfoCard label="Temperature"  value={`${humidity}oc`} />
-        <InfoCard label="Humidity" value={`${humidity} %`} />
-        {/* <InfoCard label="Condition" value={`${condition}`} /> */}
-        <Card
+         <InfoCard label="Temperature"  value={`${currenttempc}°c`} />
+        <InfoCard label="Humidity" value={`${humidity}%`} />
+        <InfoCard label="Condition" value={`${condition}`} />
+        {/* <Card
         className="weather-cards"
           sx={{
             width: 200,
@@ -82,7 +82,7 @@ const DetailsProvider = ({ details, loading }) => {
             </Typography>
             <img src={details.current.condition.icon} alt="Weather Condition" />
           </CardContent>
-        </Card>
+        </Card> */}
         <InfoCard label="Wind Speed" value={`${wind} kph`} />
        
        
