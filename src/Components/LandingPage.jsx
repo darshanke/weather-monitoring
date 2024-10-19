@@ -53,6 +53,7 @@ import React, { useState } from "react";
 import SearchBox from "./SearchBox";
 import axios from "axios";
 import DetailsProvider from "./DetailsProvider";
+import SpellCheckApp from "./SpellCheckApp";
 
 const LandingPage = () => {
   const [details, setDetails] = useState({});
@@ -81,6 +82,7 @@ const LandingPage = () => {
     <div>
       <SearchBox onSearch={onSearch} />
       <DetailsProvider details={details} loading={loading} />
+      {/* <SpellCheckApp/> */}
     </div>
   );
 };
