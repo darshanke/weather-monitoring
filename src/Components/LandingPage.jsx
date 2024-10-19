@@ -69,8 +69,9 @@ const LandingPage = () => {
       console.log(res.data);
       setDetails(res.data);
     } catch (e) {
-      setDetails({});  // Clear data on error
-      console.error(e.message);  // Log the error for debugging purposes
+      setDetails({}); 
+      console.error(e.message);  
+      alert('Failed to fetch weather data')
     } finally {
       setLoading(false);
     }
