@@ -2,7 +2,7 @@ import React from "react";
 import './DetailsProvider.css';
 
 const InfoCard = ({ label, value }) => (
-  <div className="weather-cards">
+  <div className="weather-card">
    
       <h6>{label}</h6>
       <p>{value}</p>
@@ -26,7 +26,7 @@ const DetailsProvider = ({ details, loading }) => {
 
   return (
     <div className="details-container">
-      <div className="cards-container">
+      <div className="weather-cards">
         <InfoCard label="Temperature" value={`${currenttempc}°c`} />
         <InfoCard label="Humidity" value={`${humidity}%`} />
         <InfoCard label="Condition" value={`${condition}`} />

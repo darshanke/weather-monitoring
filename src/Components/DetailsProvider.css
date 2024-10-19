@@ -7,7 +7,7 @@
     margin: 0;
   }
   
-  .cards-container {
+  .weather-cards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,7 +16,7 @@
   }
   
   /* Card styles */
-  .weather-cards {
+  .weather-card {
     width: 200px;
     height: 200px;
     margin: 10px;
@@ -29,12 +29,12 @@
     border-radius: 8px;
   }
   
-  .weather-cards h6 {
+  .weather-card h6 {
     margin: 0;
     font-size: 1.25rem;
   }
   
-  .weather-cards p {
+  .weather-card p {
     margin: 0;
     font-size: 1rem;
   }
