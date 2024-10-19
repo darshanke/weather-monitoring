@@ -2,9 +2,9 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 
 const InfoCard = ({ label, value }) => (
-  <Card
+  <div
   className="weather-cards"
-    sx={{
+    style={{
       width: 200,
       height: 200,
       margin: 1,
@@ -13,13 +13,15 @@ const InfoCard = ({ label, value }) => (
       justifyContent: "center",
       alignItems: "center",
       boxShadow: 2,
+      backgroundColor: "#FFFFFFFF",
+      borderRadius: '8px'
     }}
   >
-    <CardContent>
+    <div>
       <Typography variant="h6">{label}</Typography>
       <Typography variant="body1">{value}</Typography>
-    </CardContent>
-  </Card>
+    </div>
+  </div>
 );
 
 const DetailsProvider = ({ details, loading }) => {
